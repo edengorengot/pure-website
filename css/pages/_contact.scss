@@ -1,0 +1,143 @@
+section.contact-banner-img {
+    background: $siteColorPurple url("../images/slider-carousel-and-banners/with-overlay/museums-over.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+section.contact-section {
+    padding-top: 30px;
+}
+
+section.city-map,
+section.contact-section {
+    padding-bottom: 50px;
+}
+
+a.mail-link {
+    background-color: $siteColorGreen;
+    color: $basicColorWhite;
+    font-weight: bold;
+    text-decoration: none;
+
+    border: 3px solid $basicColorBlack;
+    padding: 3px 10px;
+}
+
+a.mail-link:hover {
+    background-color: $siteColorPurple;
+    transition: all 0.5s ease-in-out;
+}
+
+@media screen and (max-width: 767px) {
+    a.mail-link {
+        display: block;
+        text-align: center;
+        padding: 3px 0px;
+    }
+}
+
+// form
+
+section.contact-section div.container div.row {
+    justify-content: center;
+}
+
+div.form-box {
+    background-color: $siteColorGreen;
+    border: 3px solid $siteColorPurple;
+    padding: 10px;
+
+    form div.form-row {
+        display: block;
+        margin-bottom: 20px;
+
+        label {
+            display: block;
+            text-align: center;
+            font-size: large;
+            font-weight: bold;
+            text-decoration: underline;
+            color: $basicColorWhite;
+            margin-bottom: 5px;
+        }
+
+        input {
+            width: 100%;
+            text-align: left;
+            padding: 0px 5px;
+        }
+
+        textarea {
+            width: 100%;
+            resize: none;
+            padding: 5px;
+        }
+
+        input[type='text'] {
+            text-align: left;
+        }
+
+        input[type='button'] {
+            background-color: $siteColorPurple;
+            color: $basicColorWhite;
+            text-align: center;
+        }
+
+        input[type='button']:hover,
+        input[type='button']:focus {
+            // background-color: $siteColorPurpleH;
+            background-color: $siteColorYellow;
+            color: $basicColorBlack;
+            transition: all 0.7s;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    div.form-box form div.form-row label {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    // placeholder
+    ::-webkit-input-placeholder { /* Edge */
+        opacity: 0;
+    }
+      
+    :-ms-input-placeholder { /* Internet Explorer */
+        opacity: 0;
+    }
+      
+    ::placeholder {
+        opacity: 0;
+    }
+}
+
+#errName, #errLastName, #errEmail, #errText {
+    color: red;
+}
+
+#formSuccessMessage {
+    color: $siteColorYellow;
+}
+
+// map
+
+section.city-map {
+
+    div.container-fluid div.map-box {
+
+
+        iframe.map {
+            width: 100%;
+            height: 600px;
+            border: 2px solid $siteColorGreen;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    section.city-map div.container-fluid div.map-box iframe.map {
+        height: 300px;
+    }    
+}

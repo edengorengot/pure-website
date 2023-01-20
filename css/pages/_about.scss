@@ -1,0 +1,33 @@
+
+section.about-banner-img {
+    background: $siteColorPurple url("../images/slider-carousel-and-banners/with-overlay/carnaval-over.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+img.mayor-img {
+    width: 100%;
+}
+
+section.mayor, section.history {
+    padding: 0px 0px 50px;
+
+    div.container div.mayor-info-box p.mayor-speech {
+        text-align: left;
+    }
+}
+
+section.history {
+    padding-top: 30px;
+}
+
+@media screen and (max-width: 767px) {
+    div.mayor-info-box p.mayor-speech:first-child {
+        margin-top: 1rem;
+    }
+}
+
+hr.divider-history {
+    height: 3px;
+    color: $siteColorGreen;
+    opacity: 0.6;
+}

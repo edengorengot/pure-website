@@ -1,0 +1,120 @@
+section.faq-banner-img {
+    background: $siteColorPurple url("../images/slider-carousel-and-banners/with-overlay/unique-costumes-over.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+
+section.faq {
+    padding: 50px 0px;
+}
+
+
+// accordion
+
+h2#panelsStayOpen-headingOne button,
+h2#panelsStayOpen-headingTwo button,
+h2#panelsStayOpen-headingThree button,
+h2#panelsStayOpen-headingFour button,
+h2#panelsStayOpen-headingFive button,
+h2#panelsStayOpen-headingSix button,
+h2#panelsStayOpen-headingSeven button,
+h2#panelsStayOpen-headingEight button,
+h2#panelsStayOpen-headingNine button,
+h2#panelsStayOpen-headingTen button {
+    background-color: $siteColorGreen;
+    color: $basicColorWhite;
+    font-weight: bold;
+    border: 2px solid $basicColorWhite;
+}
+
+h2#panelsStayOpen-headingOne button:focus,
+h2#panelsStayOpen-headingTwo button:focus,
+h2#panelsStayOpen-headingThree button:focus,
+h2#panelsStayOpen-headingFour button:focus,
+h2#panelsStayOpen-headingFive button:focus,
+h2#panelsStayOpen-headingSix button:focus,
+h2#panelsStayOpen-headingSeven button:focus,
+h2#panelsStayOpen-headingEight button:focus,
+h2#panelsStayOpen-headingNine button:focus,
+h2#panelsStayOpen-headingTen button:focus {
+    border-color: $siteColorPurple;
+    box-shadow: none;
+    box-shadow: 0 0 0 0.2rem rgba($color: $siteColorPurple, $alpha: 0.6);
+    color: $siteColorYellow;
+}
+
+/* quiz section */
+
+section.quiz-section {
+    padding: 50px 0px;
+
+    div.container div.quiz-btn-wraper {
+        text-align: center;
+    }
+}
+
+.highlightMG {
+    text-decoration: underline;
+}
+
+/* inside the modal */
+
+div.quiz-wrap {
+
+    div.quiz-introduction {
+        text-align: center;
+        border-bottom: 3px solid $siteColorGreen;
+        margin-bottom: 5vh;
+    
+        div.col-12 h3 {
+            color: $siteColorPurple;
+            font-weight: bold;
+        }
+    }
+
+    div.questions-wraper {
+        border-bottom: 3px solid $siteColorYellow;
+        padding-bottom: 2vh;
+        margin-bottom: 3vh;
+
+        div.question-box {
+
+            h5.question-title {
+                text-align: center;
+            }
+        }
+
+        div.quiz-options div.row div.col-12 {
+            text-align: center;
+
+            button {
+                background-color: $siteColorPurple;
+                color: $basicColorWhite;
+                padding: 5px 10px;
+                border: 4px solid #cecece;
+                border-radius: 5px;
+                width: 100%;
+            }
+
+            button:hover, button:focus {
+                // background-color: $siteColorPurpleH;
+                background-color: $siteColorGreen;
+                color: $basicColorBlack;
+                transition: all 0.4s;
+            }
+        }
+
+        @media screen and (max-width: 1199px) {
+            div.quiz-options div.row div.col-12 {    
+                button {
+                    padding: 5px 10px;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+}
+
+div.final-score {
+    text-align: center;
+}

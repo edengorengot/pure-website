@@ -1,0 +1,223 @@
+
+/* carousel */
+
+
+@media screen and ( max-width: 767px ) {
+    div.main-slider {
+        display: none;
+    }
+}
+
+div.carousel-caption-center {
+    top: 50%;
+    transform: translateY(-25%);
+}
+
+
+div.carousel-item img.sider-bg {
+    opacity: 0.45;
+}
+
+div.carousel-item div.carousel-caption h2.main-titles {
+    color: $siteColorPurple;
+    font-size: xx-large;
+    -webkit-text-stroke: 2px $basicColorBlack;
+}
+
+@media screen and ( max-width: 767px ) {
+    div.carousel-item div.carousel-caption h2.main-titles {
+        font-size: x-large;
+    }
+}
+
+@media screen and ( max-width: 450px ) {
+    div.carousel-caption-center {
+        top: 40%;
+    }
+
+    div.carousel-item div.carousel-caption h2.main-titles {
+        font-size: large;
+        padding: 0px;
+    }
+}
+
+// responsive banner
+
+div.res-cover-box {
+    position: relative;
+}
+
+@media screen and ( min-width: 768px ) {
+    div.res-cover-box {
+        display: none;
+    }
+}
+
+div.res-cover-box img.res-cover {
+    width: 100%;
+}
+
+h2.res-main-title {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-25%);
+    display: block;
+    text-align: center;
+    width: 100%;
+    color: $siteColorPurple;
+    font-size: x-large;
+    font-weight: bold;
+    -webkit-text-stroke: 1px #0D0D0D;
+}
+
+// intreduction
+section.intreduction {
+    color: $siteColorPurple;
+    font-weight: bold;
+    padding: 50px 0px;
+
+    p {
+        color: $basicColorBlack;
+    }
+}
+
+div.video-box {
+    width: 50%;
+    margin: auto;
+
+    div.video-frame {
+
+        iframe {
+            border: 5px solid $siteColorPurple;
+            width: 100%;
+        }
+    } 
+}
+
+hr.hr-site {
+    height: 3px;
+    color: $siteColorGreen;
+}
+
+@media screen and (max-width: 992px) {
+    div.video-box {
+        width: 18rem;
+        // width: 100%;
+    }
+}
+
+// content option cards
+
+section.main-content-options {
+    padding-bottom: 50px;
+}
+
+div.main-wraper-content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px;
+
+    div.main-box-content {
+        width: 18rem;
+
+        div.card {
+            text-align: center;
+        }
+    }
+}
+
+
+
+
+// contact link
+
+section.contact-link-section {
+    background-color: $siteColorGreen;
+    padding: 50px 0px;
+
+    div.pos {
+
+        h3 {
+            display: inline-block;
+            color: $basicColorWhite;
+            margin-bottom: 0px;
+            line-height: 2;
+        }
+        
+        a {
+            text-decoration: none;
+
+            button {
+                background-color: $siteColorPurple;
+                color: $basicColorWhite;
+                padding: 10px 20px;
+                border: 2px solid $basicColorBlack;
+                float: right;
+                // clear: both;
+            }
+        }
+    
+        button:hover {
+            // background-color: $siteColorPurpleH;
+            background-color: $basicColorWhite;
+            color: $basicColorBlack;
+            transition: 1s all ease;
+        }
+    }
+}
+
+
+@media screen and (max-width: 579px) {
+    section.contact-link-section {
+        padding: 30px 0px;
+
+        div.pos {
+
+            h3 {
+                display: block;
+                margin-bottom: 10px;
+                line-height: 2;
+                text-align: center;
+            }
+    
+            a {
+                display: block;
+                text-align: center;
+
+                button {
+                    width: 60%;
+                    margin: auto;
+                    float: none;
+                    clear: both;
+                }
+            }
+        }
+    }
+}
+
+
+/* sponsors */
+section.sponsors {
+    padding: 10vh 0px;
+}
+
+div.card-wrap {
+    background-color: $siteColorGreen;
+    max-height: 500px;
+}
+
+@media screen and ( min-width: 768px ) {
+    div.card-wrap {
+        height: 300px;
+    }
+}
+
+div.card-body h3.sponsor-title {
+    font-size: 1.5rem;
+}
+
+div.modal-footer button.btn a {
+    color: $basicColorWhite;
+    text-decoration: none;
+}

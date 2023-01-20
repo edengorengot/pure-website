@@ -1,0 +1,305 @@
+/* this is the general CSS setup */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Website Color Scheme */
+
+$siteColorPurple: #9453A6;
+$siteColorGreen: #8CBF3F;
+$siteColorYellow: #F2CC0F;
+$basicColorBlack: #0D0D0D;
+$basicColorWhite: #F2F2F2;
+
+$siteColorPurpleH: #7f478f;
+$siteColorGreenH: #5f812d;
+
+/* Google Fonts */
+/* Pattaya */
+@import url('https://fonts.googleapis.com/css2?family=Pattaya&display=swap');
+
+/* Henny Penny */
+@import url('https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap');
+
+/* Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+div, p {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, b, strong {
+    font-family: 'Henny Penny', 'Pattaya', 'cursive', sans-serif;
+    
+}
+
+a, span {
+    font-family: inherit;
+}
+
+// Menu
+
+header nav.navbar div.container-fluid {
+
+    a.navbar-brand img.main-logo {
+        width: 100px;
+        height: 100px;
+    }
+
+    button.navbar-toggler {
+        background-color: $siteColorPurple;
+    }
+
+    button.navbar-toggler:focus, button.navbar-toggler:hover {
+        background-color: $siteColorGreen;
+        transition: all 0.5s;
+    }
+
+    div.navbar-collapse ul.navbar-nav li.nav-item {
+
+        a.nav-link {
+            background-color: $siteColorPurple;
+            margin-right: 5px;
+            border-radius: 15px;
+            color: $siteColorYellow;
+            font-weight: bold;
+            text-align: center;
+            width: 100px;
+            margin-bottom: 0px;
+        }
+
+        a.nav-link:focus, a.nav-link:hover {
+            background-color: $siteColorGreen;
+            color: $basicColorBlack;
+        }
+
+        a.active {
+            color: $basicColorWhite;
+        }
+    }
+}
+
+// responsive menu
+@media screen and ( max-width: 767px ) {
+    header nav.navbar div.container-fluid {
+
+        div.navbar-collapse ul.navbar-nav li.nav-item a.nav-link {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+// page banner
+
+section.main-banner {
+    padding: 10rem 0px;
+
+    div.banner-title-box h2.main-title-banner {
+        color: $siteColorPurple;
+        font-size: xx-large;
+        -webkit-text-stroke: 2px #0D0D0D;
+
+        text-align: center;
+        font-size: -webkit-xxx-large;
+        font-size: xxx-large;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    section.main-banner {
+        padding: 7rem 0px;
+    
+        div.banner-title-box h2.main-title-banner {
+            font-size: xx-large;
+            -webkit-text-stroke: 1px #0D0D0D;
+            text-align: center;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    section.main-banner {
+        padding: 5rem 0px;
+    
+        div.banner-title-box h2.main-title-banner {
+            font-size: large;
+            -webkit-text-stroke: 1px #0D0D0D;
+            text-align: center;
+        }
+    }
+}
+
+// section titles
+
+h2.section-heading {
+    text-align: center;
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+
+h4.section-heading-slogen {
+    text-align: center;
+}
+
+// buttons
+
+button.btn-main-site {
+    color: #fff;
+    background-color: $siteColorPurple;
+    border-color: $siteColorPurple;
+}
+
+button.btn-main-site:hover {
+    // color: #fff;
+    // background-color: $siteColorPurpleH;
+    // border-color: $siteColorPurpleH;
+    color: $basicColorBlack;
+    background-color: $siteColorGreen;
+    border-color: $siteColorPurple;
+
+    transition: all 0.5s ease;
+}
+
+span.clear {
+    clear: both;
+}
+
+
+header {
+    background-color: $basicColorWhite;
+}
+
+main {
+    background-color: $basicColorWhite;
+}
+
+footer {
+    background-color: $siteColorPurple;
+}
+
+section.footer-box {
+    padding-top: 5vh;
+}
+
+// Social media links
+#social {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#social a {
+    display: inline-block;
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 25px;
+    overflow: hidden;
+    background: gray;
+    border: 2px solid #fff;
+    margin: 0 .3em;
+    -webkit-box-shadow: 2px 2px 4px #0000009e;
+    box-shadow: 2px 2px 4px black;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+
+#social a i {
+    display: block;
+    line-height: 1.5em;
+    color: #fdf8e5;
+    font-size: 1.5em;
+}
+
+#social a.facebook {
+    background: #3f69d8;
+}
+
+#social a.twitter {
+    background: #2cbee3;
+}
+
+#social a.instagram {
+    background: #be209b;
+}
+
+#social a.youtube {
+    background: #cd201f;
+}
+
+#social a.tripAd {
+    background: #5a9234;
+}
+
+#social a:hover {
+    background: #3e3d3d;
+    -webkit-transition: .3s ease-in-out;
+    transition: 0.7s;
+}
+
+
+
+// copyright & credit
+
+h6.copyright {
+    text-align: center;
+}
+
+
+p.credit {
+    margin: 0px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 300;
+
+    a {
+        color: inherit;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    a:hover {
+        color: $siteColorYellow;
+        font-weight: bold;
+        transition: all 1.5s ease-in-out;
+    }
+}
+
+div.toTopBtnBox {
+    position: relative;
+
+    button#toTopBtn {
+        position: fixed;
+        bottom: 15px;
+        right: 15px;
+        z-index: 99;
+        cursor: pointer;
+    
+        padding: 15px;
+        font-size: 18px;
+        font-weight: bold;
+        border: 3px solid $siteColorYellow;
+        border-radius: 10px;
+        background-color: $basicColorBlack;
+        color: $basicColorWhite;
+    }
+
+    button#toTopBtn:hover {
+        background-color: $siteColorYellow;
+        border: 3px solid $basicColorBlack;
+        color: $basicColorBlack;
+        transition: all 1.3s ease;
+    }
+}
+
+@media screen and ( max-width: 767px ) {
+    div.toTopBtnBox button#toTopBtn {
+        bottom: 130px;
+    }
+}
